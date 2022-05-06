@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Foodish - Premium Dinner & Dessert</title>
+		<link href="style.css" rel="stylesheet">
+		<script src="functions.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="wrapper center-vertical">
+				<a href="index.html">
+					<img id="logo" src="images/logo.png" alt="Foodish">
+				</a>
+				<nav>
+					<ul id="nav-list">
+						<li><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#menu">Menu</a></li>
+						<li><a href="#review">Review</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+					<div id="basket">
+						<small id="empty-text">Your basket is empty. Add your food to basket to checkout.</small>
+						<ul id="basket-list">
+						</ul>
+						<hr>
+						<a href="checkout.html" class="button">Checkout</a>
+					</div>
+				</nav>
+				<div id="nav-icons" class="center-vertical">
+					<a href="#"><img class="icon" src="images/search-icon.svg"></a>
+					<a href="#" onclick="toggleCart()"><img class="icon" src="images/cart-icon.svg"></a>
+					<a href="#" onclick="toggleMenu()"><img class="icon" src="images/menu-icon.svg"></a>
+				</div>
+			</div>
+		</header>
+		<main class="wrapper">
+			<section id="thankyou">
+				<h2>RESERVATION</h2>
+				<p>Thank you. You will shortly receive an email confirmation.</p>
+				<p>
+					<a class="button" href="index.html">Return to homapage</a>
+				</p>
+			</section>
+		</main>
+	</body>
+</html>
