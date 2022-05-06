@@ -61,6 +61,8 @@ h2 {
 
 .icon-grey {
 	/* used for grey stars in reviews */
+	/* the !important rule indicates the greater significance of a given element,
+	 * so that this element will override all previous styling rules for this element */
 	filter: invert(100%) brightness(50%) !important;
 }
 
