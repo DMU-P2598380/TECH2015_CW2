@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!--Every html page contains a head section, which contains information like
+                title of page, links to other pages (for instance css or javascript) and settings.-->
+		<!--The Meta tag makes the website mobile frindly-->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Foodish - Premium Dinner & Dessert</title>
 		<link href="style.css" rel="stylesheet">
+		<!--Line bottom includes source to the link, which allows contact form to be visible and active-->
 		<script src="functions.js"></script>
 	</head>
 	<body>
+		<!--Creation of an arrow that will take users to the contact section at the bottom of the page-->
 		<div id="down-arrow">
 			<a href="#contact">
 				<img src="images/arrow-icon.svg" class="icon">
 			</a>
 		</div>
 		<header>
+		<!--In this section a logo image was added, and the menu was created using the <nav-list> section-->
 			<div class="wrapper center-vertical">
 				<a href="index.html">
 					<img id="logo" src="images/logo.png" alt="Foodish">
@@ -26,14 +32,19 @@
 						<li><a href="#review">Review</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
+					<!--Next the basket, search and menu buttons have been created, as well as the option that appears after clicking the basket,
+					 i.e. the checkout button and the message "Your basket is empty. Add your food to basket to checkout."-->
 					<div id="basket">
 						<small id="empty-text">Your basket is empty. Add your food to basket to checkout.</small>
 						<ul id="basket-list">
 						</ul>
+						<!--The <hr> tag defines a thematic break in an HTML page-->
 						<hr>
+						<!--The destination of each button is specified using the href attribute.-->
 						<a href="checkout.html" class="button">Checkout</a>
 					</div>
 				</nav>
+				<!--Thanks to the <nav-icons> section and href attribute, it is made possible to easily search for specific data using the button-->
 				<div id="nav-icons" class="center-vertical">
 					<a href="#"><img class="icon" src="images/search-icon.svg"></a>
 					<a href="#" onclick="toggleCart()"><img class="icon" src="images/cart-icon.svg"></a>
@@ -41,6 +52,12 @@
 				</div>
 			</div>
 		</header>
+		<!--Three elements such as <hero>, <backdrop> and <overlay> have been added.
+		    Hero is responsible for creating a large image with the text on top of it.
+		    "Backdrop is a box the size of the viewport which is rendered immediately
+		    beneath any element being presented in fullscreen mode."(::backdrop - CSS: Cascading Style Sheets | MDN, 2022).
+		    The <overlay> element is used to place one thing on top of another, so in the case of this page,
+		    to place text and a button on top of an image.-->
 		<main class="wrapper">
 			<section id="hero">
 				<div class="backdrop"></div>
@@ -49,12 +66,15 @@
 					<a href="#menu" class="button">GET IT NOW</a>
 				</div>
 			</section>
+			<!--The about section was made using elements such as <h2> and <p> which added text telling about the restaurant.-->
 			<section id="about">
 				<h2>ABOUT US</h2>
 				<p>
 				For 15 years Foodish has been presenting a completely new kind of world cuisine. Our chefs come from all over the world and with them have brought a book of the best recipes, refined in every detail. Our cuisine is the quintessence of fresh, succulent, and highest quality ingredients brought straight from Italy and beyond. Savour our dishes and move with us to another dimension of taste.
 				</p>
 			</section>
+			   <!--A <menu> was then created which contained an image, the name of the product,
+			   the price and a button which allowed the product to be added to the basket.-->
 			<section id="menu">
 				<h2>MENU</h2>
 				<ul>
@@ -90,6 +110,8 @@
 					</li>
 				</ul>
 			</section>
+			<!--Reviews section showing customers' opinions about the restaurant, was made in a straightforward way
+			    with text and icons in the shape of stars that reflect the customer's rating.-->
 			<section id="review">
 				<h2>CUSTOMER'S REVIEW</h2>
 				<ul>
@@ -134,6 +156,10 @@
 					</li>
 				</ul>
 			</section>
+				<!--In the next section, a contact form has been created,
+			            which includes an input-box that defines the input field in which the user can enter data.
+				    And also a submit button that allows the form to be sent with the data that has been entered,
+				    using a transfer to the contact.html page-->
 			<section id="contact">
 				<h2>CONTACT US</h2>
 				<div class="map"></div>
